@@ -27,3 +27,17 @@ interface Bottle {
 }
 
 /* identityFour<Bottle>({}) */
+
+// a function that takes in arrays, performs some logic and returns an array.
+function getSearchProducts<T>(products: T[]): T {
+    // do some logic
+    const myIndex = 3
+    return products[myIndex]
+}
+
+// arrow function
+const getMoreSearchProducts = <T,>(products: T[]) => {
+    // logic on db
+    const myIndex = 4;
+    return products[myIndex]
+}
